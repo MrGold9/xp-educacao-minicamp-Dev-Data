@@ -1,0 +1,50 @@
+<html>
+
+    <script>
+
+        //Arrays suportam qualquer tipo de variável como conteúdo
+        //no mesmo array
+        var carros = ["Gol", "Pálio", "Uno"];
+        console.log(carros);
+
+        var primeiroCarro = carros[0];
+        var segundoCarro = carros[1];
+        var terceiroCarro = carros[2];
+
+        console.log("primeira posição: " + primeiroCarro);
+        console.log("segunda posição: " + segundoCarro);
+        console.log("terceira posição: " + terceiroCarro);
+
+        carros[2] = "Argo";
+        console.log(carros[2]);
+
+        //.length mostra a quantidade de elementos em um array
+        console.log("tamanho do array: " + carros.length);
+        console.log("último elemento do array: " + carros[carros.length - 1]);
+
+        carros[3] = "Sandero";
+        console.log("último elemento do array: " + carros[carros.length - 1]);
+
+        carros[carros.length] = "Civic";
+        console.log("último elemento do array: " + carros[carros.length - 1]);
+
+
+        //.push adiciona um elemento no final do array
+        carros.push("Polo");
+        console.log(carros);
+
+        //.pop remove um elemento no final do array
+        console.log(carros.pop());
+        console.log(carros);
+
+        //.unshift insere elemento no início do array
+        carros.unshift("Jetta");
+        console.log(carros);
+
+        //.shift remove elemento no início do array
+        console.log(carros.shift());
+        console.log(carros);
+
+    </script>
+
+</html>
