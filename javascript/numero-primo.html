@@ -1,0 +1,30 @@
+<html>
+
+    <script>
+
+        function verificaNumeroPrimo(numero)
+        {
+            var divisores = 0;
+            var retorno;
+
+            for (var i = 0; i <= numero; i++) 
+            {
+                if (numero % i == 0)
+                {
+                    divisores++;
+                }
+            }
+            if (divisores == 2)
+            {
+                retorno = "O número " + numero + " é primo";
+            }
+            else
+            {
+                retorno = "O número " + numero + " não é primo";
+            }
+            return retorno;
+        }
+
+    </script>
+
+</html>
